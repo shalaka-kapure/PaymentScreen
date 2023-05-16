@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PaymentScreen/static/css/main.a2caad9c.css",
+    "main.js": "/PaymentScreen/static/js/main.09b746e5.js",
+    "static/media/background.png": "/PaymentScreen/static/media/background.e8c9cb4c0636ae856448.png",
+    "index.html": "/PaymentScreen/index.html",
+    "main.a2caad9c.css.map": "/PaymentScreen/static/css/main.a2caad9c.css.map",
+    "main.09b746e5.js.map": "/PaymentScreen/static/js/main.09b746e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2caad9c.css",
+    "static/js/main.09b746e5.js"
+  ]
+}
