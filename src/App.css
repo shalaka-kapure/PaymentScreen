@@ -51,7 +51,7 @@
 /* Body */
 .bodyDiv {
   background-image: url("./images/background.png");
-  height: 85vh;
+  height: 100vh;
   width: 92vw;
   color: white;
   display: flex;
@@ -99,97 +99,253 @@
 }
 
 /* Right side component */
-.subsDiv{
-    background-color: #FFFFFF;
-    width: 30%;
-    height: 80vh;
-    border-radius: 10px;
-    color: #3C4852;
-    margin-right: 35px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: Roboto;
+.subsDiv {
+  background-color: #ffffff;
+  width: 30%;
+  height: 90vh;
+  border-radius: 10px;
+  color: #3c4852;
+  margin-right: 35px;
+  padding: 35px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Roboto;
+  margin-bottom: 50px;
 }
-.top{
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  align-items: center;
+  justify-content: space-between;
+}
+.topDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.number {
+  color: white;
+  background-color: #0096ff;
+  border-radius: 50%;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.subsDiv h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.subsBox {
+  border: 2px solid #bebebe;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: #3c4852;
+  font-weight: 500;
+}
+.subsFee,
+.total {
+  width: 90%;
+  height: 40px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.divider {
+  border: 1px solid #bebebe;
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.buttonBox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.cancelBtn {
+  width: 47%;
+  border: 1px solid #f77171;
+  background-color: #ffffff;
+  color: #f77171;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cancelBtn:active,
+.payBtn:active {
+  transform: translateY(4px);
+}
+.payBtn {
+  width: 47%;
+  height: 30px;
+  background-color: #47ba68;
+  color: white;
+  border: 1px solid #47ba68;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.payImg {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+}
+.offer {
+  font-size: 10px;
+  color: white;
+  background-color: #f77171;
+  border-bottom: 1px solid #f77171;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.blank {
+  font-size: 10px;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  height: 10px;
+}
+.recommend {
+  font-size: 10px;
+  color: white;
+  background-color: #47ba68;
+  border-bottom: 1px solid #47ba68;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.subsInfo input[type="radio"] {
+  appearance: none;
+  display: none;
+}
+.subsInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.subsInfo div{
     display: flex;
     flex-direction: row;
-    width: 65%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
-.topDiv{
+.totalPrice{
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.radio-button {
+  margin-right: 10px;
+}
+.expired {
+  background-color: #e7e7e7;
+  color: #bebebe;
+}
+.subsBox.selected {
+  background-color: #d7eddd;
+  border: 2px solid #47BA68;
+}
+.limited {
+  background: linear-gradient(to bottom, #f7a5a5, #f4cece, white) padding-box,
+    linear-gradient(
+        135deg,
+        #de4313 0%,
+        #de4313 0.75%,
+        #de4313 2.92%,
+        #de4414 6.37%,
+        #df4515 10.97%,
+        #df4816 16.59%,
+        #e04b18 23.1%,
+        #e1501b 30.37%,
+        #e3561f 38.27%,
+        #e55e24 46.66%,
+        #e7682b 55.41%,
+        #eb7533 64.39%,
+        #ee843c 73.47%,
+        #f39547 82.52%,
+        #f8a954 91.41%,
+        #fec163 100%
+      )
+      border-box;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  width: 90%;
+  height: 150px;
+  margin-bottom: 12px;
+  padding: 0 10px;
+  color: #de4313;
+  font-weight: 400;
+  margin-top: 12px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.limited div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 70%;
+  margin: 5px 0;
+}
+.subsprice{
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 20%;
 }
-.number{
-    color: white;
-    background-color: #0096FF;
-    border-radius: 50%;
-    width: 20px;
+.limitedPrice{
     display: flex;
     align-items: center;
+    justify-content: space-between!important;
+    width: 100%!important;
+}
+.limitedPrice div{
+    width: 50%;
+}
+.limitedPrice .subsprice{
+    width: 20%;
+    display: flex;
+    align-items: start;
     justify-content: center;
 }
-.subsDiv h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
+.total .subsprice{
+    font-size: 20px;
 }
-.subsBox{
-    border: 1px solid #BEBEBE;
-    width: 90%;
-    height: 40px;
-    margin-bottom: 12px;
-}
-.subsFee, .total{
-    width: 90%;
-    height: 40px;
-    margin-top: 5px;
-}
-.divider{
-    border: 1px solid #BEBEBE;
-    width: 90%;
-    margin-top: 5px;
-}
-.buttonBox{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-.cancelBtn{
-    width: 47%;
-    border: 1px solid #F77171;
-    background-color: #FFFFFF;
-    color: #F77171;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.cancelBtn:active, .payBtn:active {
-    transform: translateY(4px);}
-.payBtn{
-    width: 47%;
-    height: 30px;
-    background-color: #47BA68;
-    color: white;
-    border: 1px solid #47BA68;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.payImg{
-    width: 90%;
-    display: flex;
-    align-items: flex-start;
-}
-
-
